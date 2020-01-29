@@ -180,7 +180,16 @@
     <p class="setup-similar-label">Петр Петров</p>
   </div>
 </template>
-<script></script>
+<script>
+  var fireballSize = 22;
+  var getFireballSpeed = function(left){
+    if(left){
+      return 5; //по ветру
+    }else{
+      return 2; // против ветра
+    }
+  };
+</script>
 <script src="js/game.js"></script>
 
 </body>
